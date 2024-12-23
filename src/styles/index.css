@@ -1,0 +1,66 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; /* Prevent scrollbars from appearing */
+}
+
+.bottom-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.enter-btn {
+  padding: 0.5rem 1rem;
+}
+
+.exit-btn {
+  padding: 0.5rem 1rem;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+
+  width: fit-content;
+
+  z-index: 9999;
+  margin: 4.5rem 1rem;
+}
+
+.loading-message,
+.unsupported-message {
+  margin: 1rem;
+}
